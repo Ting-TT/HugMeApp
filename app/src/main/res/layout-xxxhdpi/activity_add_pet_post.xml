@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.Posts.AddPetPost">
+
+    <EditText
+        android:id="@+id/et_add_petGender"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="pet gender"
+        android:imeOptions="actionDone"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_add_petGender"
+        app:layout_constraintEnd_toEndOf="@+id/et_add_petAge"
+        app:layout_constraintTop_toTopOf="@+id/tv_add_petGender" />
+
+    <EditText
+        android:id="@+id/et_add_petAge"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="pet age"
+        android:imeOptions="actionDone"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_add_petAge"
+        app:layout_constraintEnd_toEndOf="@+id/et_add_petBreed"
+        app:layout_constraintTop_toTopOf="@+id/tv_add_petAge" />
+
+    <EditText
+        android:id="@+id/et_add_petSpecies"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="pet species"
+        android:imeOptions="actionDone"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/tx_add_petSpecies"
+        app:layout_constraintEnd_toEndOf="@+id/et_add_petID"
+        app:layout_constraintTop_toTopOf="@+id/tx_add_petSpecies" />
+
+    <EditText
+        android:id="@+id/et_add_petBreed"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="pet breed"
+        android:imeOptions="actionDone"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_add_petBreed"
+        app:layout_constraintEnd_toEndOf="@+id/et_add_petSpecies"
+        app:layout_constraintTop_toTopOf="@+id/tv_add_petBreed" />
+
+    <TextView
+        android:id="@+id/tv_add_petPicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="Pet Pictures:"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_add_petGender"
+        app:layout_constraintTop_toBottomOf="@+id/tv_add_petGender" />
+
+    <TextView
+        android:id="@+id/tv_add_petGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Pet Gender:"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_add_petAge"
+        app:layout_constraintTop_toBottomOf="@+id/tv_add_petAge" />
+
+    <TextView
+        android:id="@+id/tv_add_petID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Pet ID:"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tx_add_petSpecies"
+        app:layout_constraintTop_toBottomOf="@+id/tv_addPost_text" />
+
+    <TextView
+        android:id="@+id/tx_add_petSpecies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Pet Species:"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/et_add_petSpecies"
+        app:layout_constraintTop_toBottomOf="@+id/tv_add_petID" />
+
+    <TextView
+        android:id="@+id/tv_add_petBreed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Pet Breed:"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tx_add_petSpecies"
+        app:layout_constraintTop_toBottomOf="@+id/tx_add_petSpecies" />
+
+    <TextView
+        android:id="@+id/tv_add_petAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Pet Age:"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_add_petBreed"
+        app:layout_constraintTop_toBottomOf="@+id/tv_add_petBreed" />
+
+    <TextView
+        android:id="@+id/tv_addPost_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Create A New Post"
+        android:textColor="#00BCD4"
+        android:textSize="26sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_add_petID"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginLeft="65dp"
+        android:ems="10"
+        android:hint="pet id"
+        android:imeOptions="actionDone"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_add_petID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_add_petID" />
+
+    <Button
+        android:id="@+id/pick"
+        android:layout_width="91dp"
+        android:layout_height="40dp"
+        android:text="Add Pictures"
+        android:textSize="8sp"
+        app:backgroundTint="#3F51B5"
+        app:layout_constraintEnd_toEndOf="@+id/et_add_petGender"
+        app:layout_constraintTop_toTopOf="@+id/tv_add_petPicture" />
+
+    <TextView
+        android:id="@+id/totalPhotos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#3F51B5"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_add_petPicture"
+        app:layout_constraintStart_toStartOf="@+id/tv_add_petPicture"
+        app:layout_constraintTop_toBottomOf="@+id/tv_add_petPicture"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_Gallery_Images"
+        android:layout_width="320dp"
+        android:layout_height="167dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_post"
+        android:layout_width="80dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Post"
+        app:backgroundTint="#00BCD4"
+        app:layout_constraintStart_toEndOf="@+id/tv_addPost_text"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

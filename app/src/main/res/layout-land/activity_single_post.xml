@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.Posts.SinglePostActivity">
+
+    <TextView
+        android:id="@+id/tv_petAge_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:text="years old"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tv_petAge"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <Button
+        android:id="@+id/bt_delete"
+        android:layout_width="74dp"
+        android:layout_height="38dp"
+        android:text="Delete"
+        android:textColor="@color/black"
+        android:textSize="8sp"
+        android:visibility="visible"
+        app:backgroundTint="#FFEB3B"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_petBreed_text"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/tv_petBreed_text"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/bt_like"
+        android:layout_width="55dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="13dp"
+        android:onClick="likePost"
+        android:text="Like"
+        android:textSize="8sp"
+        app:backgroundTint="#B5190D"
+        app:layout_constraintEnd_toEndOf="@+id/bt_sendComment"
+        app:layout_constraintStart_toStartOf="@+id/bt_sendComment"
+        app:layout_constraintTop_toBottomOf="@+id/bt_sendComment" />
+
+    <TextView
+        android:id="@+id/tv_petID_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="12dp"
+        android:text="Pet ID:"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="320dp"
+        android:layout_height="181dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="145dp"
+        app:cardCornerRadius="12dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/image_slider"
+            android:layout_width="311dp"
+            android:layout_height="167dp"
+            app:iss_auto_cycle="true"
+            app:iss_period="3000"
+            tools:ignore="MissingConstraints" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tx_petSpecies_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:text="Pet Species:"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/tv_petID_text" />
+
+    <TextView
+        android:id="@+id/tv_petBreed_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:text="Pet Breed:"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/tx_petSpecies_text" />
+
+    <TextView
+        android:id="@+id/tv_petID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tv_petID_text"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <TextView
+        android:id="@+id/tv_petSpecies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tx_petSpecies_text"
+        app:layout_constraintTop_toBottomOf="@+id/tv_petID" />
+
+    <TextView
+        android:id="@+id/tv_petBreed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tv_petBreed_text"
+        app:layout_constraintTop_toBottomOf="@+id/tv_petSpecies" />
+
+    <TextView
+        android:id="@+id/tv_petAge_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="12dp"
+        android:text="Pet Age:"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tv_petID"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <TextView
+        android:id="@+id/tv_petAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tv_petAge_text"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <TextView
+        android:id="@+id/tv_petGender_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Pet Gender:"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_petAge_text"
+        app:layout_constraintTop_toBottomOf="@+id/tv_petAge_text" />
+
+    <TextView
+        android:id="@+id/tv_petGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tv_petGender_text"
+        app:layout_constraintTop_toBottomOf="@+id/tv_petAge" />
+
+    <EditText
+        android:id="@+id/et_comment"
+        android:layout_width="119dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="comment"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_sendComment"
+        android:layout_width="61dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:text="Reply"
+        android:textSize="8sp"
+        app:backgroundTint="#3F51B5"
+        app:layout_constraintBottom_toBottomOf="@+id/et_comment"
+        app:layout_constraintStart_toEndOf="@+id/et_comment" />
+
+    <ListView
+        android:id="@+id/lv_comments"
+        android:layout_width="232dp"
+        android:layout_height="186dp"
+        android:layout_marginTop="10dp"
+        android:cacheColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/bt_like"
+        app:layout_constraintTop_toBottomOf="@+id/bt_like" />
+
+    <TextView
+        android:id="@+id/tv_likeNumber_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Total Likes:"
+        android:textColor="#F44336"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_like"
+        app:layout_constraintEnd_toStartOf="@+id/tv_likeNumber"
+        app:layout_constraintTop_toTopOf="@+id/bt_like"
+        app:layout_constraintVertical_bias="0.529" />
+
+    <TextView
+        android:id="@+id/tv_likeNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:text="0"
+        android:textColor="#F44336"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_likeNumber_text"
+        app:layout_constraintEnd_toStartOf="@+id/bt_like"
+        app:layout_constraintTop_toTopOf="@+id/tv_likeNumber_text" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

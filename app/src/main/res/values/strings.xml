@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Hug Me</string>
+    <string name="description1">Save</string>
+    <string name="description2">Animal</string>
+    <string name="description3">Lives</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="location">Current Location</string>
+    <string name="sign_in">Sign In</string>
+    <string name="register">Register</string>
+    <string name="admin_code">Admin Code</string>
+    <string name="admin_sign_in">Admin Sign In</string>
+    <string name="user_name">User Name</string>
+    <string name="gender">Gender</string>
+    <string name="submit">Submit</string>
+    <string name="create_post">Create Post</string>
+    <string name="search">Search</string>
+    <string name="log_out">Log Out</string>
+</resources>
