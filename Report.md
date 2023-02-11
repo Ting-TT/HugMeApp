@@ -12,17 +12,17 @@
 
 ## Team Members and Roles
 
-| UID | Name | Role |
-| :--- | :----: | ---: |
-| u7079635 | Qianxuan Lin | Tokenizer and Parser, Simple GPS |
-| u7272317 | Xie Hu | Firebase, Google Login, post insert and delete, like function |
-| u7228238 | Ting Tang | UI design, APP features: add new posts and comment, Create Data Instance |
-| u7305966 | Xitong Liu | UI, APP featrues: Admin login, posts display, search posts and display |
+| Name | Role |
+| :----: | ---: |
+| Qianxuan Lin | Tokenizer and Parser, Simple GPS |
+| Xie Hu | Firebase, Google Login, post insert and delete, like function |
+| Ting Tang | UI design, APP features: add new posts and comment, Create Data Instance |
+| Xitong Liu | UI, APP featrues: Admin login, posts display, search posts and display |
 
 
 ## Summary of Individual Contributions
 
-**U7079635, Qianxuan Lin, I contribute 25% of the project.**
+**Qianxuan Lin, I contribute 25% of the project.**
 Here are my contributions:
 * LocationActivity.class
 * Tokenizer.class
@@ -34,7 +34,7 @@ Here are my contributions:
 * Exp.class
 * PostActivity.class: search part, collaborate with Xitong Liu
 
-**U7272371, Name: Xie Hu, I contribute 25% of the project.**
+**Xie Hu, I contribute 25% of the project.**
 Here are my contributions:
 * (Code implementation) Firebase setup
 * (Code implementation) google login and logout
@@ -48,7 +48,7 @@ Here are my contributions:
 * (report writing) class diagram
 * (report writing) "Application Summary with Screenshots": "Single Post" part
 
-**u7228238, Ting Tang, I contribute 25% of the project.**
+**Ting Tang, I contribute 25% of the project.**
 Here are my contributions:
 * (UI design) all four xml files for `activity_add_pet_post`
 * (UI design) all four xml files for `activity_single_post`
@@ -63,7 +63,7 @@ Here are my contributions:
 * (report writing) "Table of Contents" and rearrange text size and arrangements
 * (data instance) create more than 2500 data instances in firebase (more than 10 posts with 250 comments each)
 
-**U7305966, Xitong Liu, I contributed 25% of the project.**
+**Xitong Liu, I contributed 25% of the project.**
 Here are my contributions:
 * (Code implementation) MainActivity.class: admin(), adminSignIn(), hideAdmin()
 * (Code implementation) PostActivity.class: postListener(), onCreate(): post displayment, intent put extra objects, search part. Search part collaborate with Qianxuan Lin.
