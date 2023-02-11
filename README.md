@@ -2,6 +2,14 @@
 Made by Me & my three other teammates: Qianxuan Lin, Xie Hu, Xitong Liu  
 for COMP2100-6442 Assignment 1. 
 
+## DEMO
+please see it [here](https://github.com/Ting-TT/HugMeApp/blob/main/DEMO.md)
+
+## Project Report
+please see it [here](https://github.com/Ting-TT/HugMeApp/blob/main/Report.md).
+
+<br/>
+
 ## Idea
 An app to help/save/report injured animals(pets/wildlife)
 
