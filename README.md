@@ -1,4 +1,7 @@
-# COMP2100-6442 Assignment 1
+# Hug Me APP
+Made by Me & my three other teammates: Qianxuan Lin, Xie Hu, Xitong Liu  
+for COMP2100-6442 Assignment 1. 
+
 ## Idea
 An app to help/save/report injured animals(pets/wildlife)
 
